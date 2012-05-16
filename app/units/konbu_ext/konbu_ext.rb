@@ -9,6 +9,12 @@ module KonbuExt
     end
   end
 
+  scope(:controller) do
+    function(:ajitsuke) do
+      @cal_answer *= 10
+    end
+  end
+
 =begin
   active_if :always_true do |context, options|
     # "context' is invoking context such as controller

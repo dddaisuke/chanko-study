@@ -1,0 +1,2 @@
+module MizuHelper
+end

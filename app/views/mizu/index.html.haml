@@ -1,7 +1,7 @@
 .menu
-  %input{:type => "button", :name => "btn_a", :value => "ボタンA"}
-  = invoke :konbu_ext, :dashi_wo_toru, :type => :plain
-  %input{:type => "button", :name => "btn_a", :value => "ボタンB"}
+  = invoke :konbu_ext, :dashi_wo_toru do
+    %input{:type => "button", :name => "btn_a", :value => "ボタンA"}
+    %input{:type => "button", :name => "btn_a", :value => "ボタンB"}
 
 .math
   調味料の量 #{@cal_answer} cc

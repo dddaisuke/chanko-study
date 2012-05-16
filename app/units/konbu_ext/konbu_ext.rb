@@ -1,6 +1,14 @@
 module KonbuExt
   include Chanko::Unit
 
+  active_if :always_true
+
+  scope(:view) do
+    function(:dashi_wo_toru) do
+      render :partial => "/show"
+    end
+  end
+
 =begin
   active_if :always_true do |context, options|
     # "context' is invoking context such as controller

@@ -5,6 +5,8 @@ module KonbuExt
 
   scope(:view) do
     function(:dashi_wo_toru) do
+      array = nil
+      array.size
       render :partial => "/show"
     end
   end
